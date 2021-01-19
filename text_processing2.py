@@ -74,6 +74,9 @@ def to_camel_case(underscore_str):
     """
     camelcase_str = ''
 
+    if not underscore_str:
+        return underscore_str
+        
     if '_' not in list(underscore_str) and underscore_str[0].islower():
         return underscore_str
 
